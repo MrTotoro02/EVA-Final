@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/naruto_grap"
+    app:startDestination="@id/listarApiFragment">
+
+    <fragment
+        android:id="@+id/listarApiFragment"
+        android:name="pe.edu.narutoapp.fragments.ListarApiFragment"
+        android:label="fragment_listar_api"
+        tools:layout="@layout/fragment_listar_api" >
+        <action
+            android:id="@+id/action_listarApiFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritoFragment"
+        android:name="pe.edu.narutoapp.fragments.FavoritoFragment"
+        android:label="fragment_favorito"
+        tools:layout="@layout/fragment_favorito" >
+        <action
+            android:id="@+id/action_favoritoFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listnubeFragment"
+        android:name="pe.edu.narutoapp.fragments.ListnubeFragment"
+        android:label="fragment_listnube"
+        tools:layout="@layout/fragment_listnube" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="pe.edu.narutoapp.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info"/>
+        <action
+        android:id="@+id/action_infoFragment_to_loginActivity"
+        app:destination="@+id/loginActivity" />
+
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="pe.edu.narutoapp.fragments.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="pe.edu.narutoapp.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>
